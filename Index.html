@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
 </head>
+<script type="module" src="app.js"></script>
+<script></script>
 <body>
     <div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
@@ -23,9 +25,9 @@
                 <div class="cmt">
                     <h3>실시간 댓글</h3>
                     <br>
-                    <div>익명의대건인 : 안녕하세요</div>
+                    <div id="cmtest"></div>
                     <br>
-                    <input type="text" placeholder="댓글을 입력하세요">
+                    <input type="text" id="cmtinp" placeholder="댓글을 입력하세요"><input type="button" onclick="addComment();">
                     <br>
                     <br>
                 </div>
