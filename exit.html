@@ -9,24 +9,46 @@
 </head>
 <script src="app.js"></script>
 <body>
+    <style>
+        #candi1{
+            color: blue;
+            background-color: blue;
+            height: 100px;
+        }
+        #candi2{
+            color: red;
+            background-color: red;
+            height: 100px;
+        }
+    </style>
     <div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
-        <div>논산대건고등학교총회장선거</div>
+        <div>출구조사</div>
         <br>
         <div><img src="dartit.png" width="150px" alt=""></div>
     </div>
     <div class="bid" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
         <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar">여론조사 톺아보기</span><span class="bar"><a href="exit.html">출구조사</a></span>
     </div>
-    <table style="margin-top: 8%;">
+    <table id="canpic" style="position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);border:solid;padding: 100px;border-width: 0.5px;border-radius: 10px;">
         <tr>
             <td>
             </td>
-            <td style="padding-left: 100px;">
-
+            <td>
+                <span class="candi">
+                    <div id="candi1">ㅁ</div>
+                    <span>장원영</span>
+                </span>
             </td>
-            <td><img id="canpic" src="테스트1.png" width="450px" style="border: solid; padding: 10px;margin-left: 300px;margin-top: 30px; border-width: 0.5px;border-radius: 10px;padding-bottom: 30px;" alt=""></td>
-            <td style="padding-left: 5%;">
+            <td>
+                <span style="padding-left: 50px;"></span>
+            </td>
+            <td>
+                <span class="candif"></span>
+                <span class="candi">
+                    <div id="candi2">ㅁ</div>
+                    <span>카리나</span>
+                </span>
             </td>
         </tr>
     </table>
