@@ -8,15 +8,17 @@
     <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
 </head>
 <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="y.js"></script>
 <body>
-    <div id="tit" style="text-align: center;position: fixed;top: 0;">
+    <a href="Index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
         <div>논산대건고등학교총회장선거</div>
         <br>
         <div><img src="dartit.png" width="150px" alt=""></div>
-    </div>
+    </div></a>
     <div class="bid" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
-        <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar">여론조사 톺아보기</span><span class="bar"><a href="exit.html">출구조사</a></span>
+        <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar"><a href="yeoronjosa.html">여론조사 톺아보기</a></span><span class="bar"><a href="exit.html">출구조사</a></span>
     </div>
     <table style="margin-top: 8%;">
         <tr>
@@ -25,22 +27,25 @@
             <td style="padding-left: 100px;">
 
             </td>
-            <td><img id="canpic" src="테스트1.png" width="450px" style="border: solid; padding: 10px;margin-left: 300px;margin-top: 30px; border-width: 0.5px;border-radius: 10px;padding-bottom: 30px;" alt=""></td>
+            <td><img id="canpic" src="Creative Credentials Website (1).svg" width="700px" style="border: solid; padding: 10px;margin-left: 300px;margin-top: 30px; border-width: 0.5px;border-radius: 10px;padding-bottom: 30px;" alt=""></td>
             <td style="padding-left: 5%;">
             </td>
         </tr>
-    </table>
-    <div style="position: fixed;right: 3%;top: 20%;">
-        <h3 class="sbtn">선거 <span id="dday">D-5</span></h3>
-        <h3 class="sbtn">2차여론조사진행중</h3>
-        <h3 class="sbtn">선거광고보기</h3>
-        <div class="sbtn">
-            <h3>지난 여론조사</h3>
-            <br>
-            <span>장원영</span>
-            <span>카리나</span>
-            <br>
-        </div>
-    </div>
+    </table><div style="position: fixed; right: 3%; top: 20%;">
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">선거 <span id="dday">D-5</span></span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">2차여론조사진행중</span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">선거광고보기</span>
+  </div>
+  <div class="sbtn">
+    <canvas id="myChartt" width="100" height="150"></canvas>
+  </div>
+</div>
+
+    <div style="position: fixed;bottom: 30px;"><div>학생회장선거공익광고</div><video src="학생회장선거공익광고.mp4" muted autoplay controls width="340px"></video></div>
 </body>
 </html>

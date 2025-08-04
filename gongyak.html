@@ -8,16 +8,18 @@
     <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
 </head>
 <script src="gongyak.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="y.js"></script>
 <script></script>
 <body>
-    <div id="tit" style="text-align: center;position: fixed;top: 0;">
+    <a href="Index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
         <div>후보자 공약</div>
         <br>
         <div><img src="dartit.png" width="150px" alt=""></div>
-    </div>
+    </div></a>
     <div class="bid" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
-        <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar">여론조사 톺아보기</span><span class="bar"><a href="exit.html">출구조사</a></span>
+        <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar"><a href="yeoronjosa.html">여론조사 톺아보기</a></span><span class="bar"><a href="exit.html">출구조사</a></span>
     </div>
     <table style="margin-top: 8%;">
         <tr>
@@ -27,92 +29,24 @@
 
             </td>
             <table style="padding-left: 25%;padding-top:3%;">
-                <tr>
-                    <td>
-                        <div class="gy">
-                            <h2>기호1번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="gy">
-                            <h2>기호2번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="gy">
-                            <h2>기호3번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="gy">
-                            <h2>기호4번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="gy">
-                            <h2>기호5번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="gy">
-                            <h2>기호6번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <div class="gy">
-                            <h2>기호7번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
-                    <td>
-                        <div class="gy">
-                            <h2>기호8번 김경민</h2>
-                            <h4>100원 지원</h4>
-                            <h4>대건고온 폭파</h4>
-                            <h4>make daegeon great again</h4>
-                        </div>
-                    </td>
+                <tr id="gys">
                 </tr>
             </table>
             </td>
         </tr>
-    </table>
-    <div style="position: fixed;right: 3%;top: 20%;">
-        <h3 class="sbtn">선거 <span id="dday">D-5</span></h3>
-        <h3 class="sbtn">2차여론조사진행중</h3>
-        <h3 class="sbtn">선거광고보기</h3>
-        <div class="sbtn">
-            <h3>지난 여론조사</h3>
-            <br>
-            <span>김경민</span>
-            <br>
-        </div>
-    </div>
+    </table><div style="position: fixed; right: 3%; top: 20%;">
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">선거 <span id="dday">D-5</span></span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">2차여론조사진행중</span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">선거광고보기</span>
+  </div>
+  <div class="sbtn">
+    <canvas id="myChartt" width="100" height="150"></canvas>
+  </div>
+</div>
 </body>
 </html>

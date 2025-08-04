@@ -8,6 +8,9 @@
     <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
 </head>
 <script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="exit.js"></script>
+<script src="y.js"></script>
 <body>
     <style>
         #candi1{
@@ -21,48 +24,31 @@
             height: 100px;
         }
     </style>
-    <div id="tit" style="text-align: center;position: fixed;top: 0;">
+    <a href="Index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
         <div>출구조사</div>
         <br>
         <div><img src="dartit.png" width="150px" alt=""></div>
-    </div>
+    </div></a>
     <div class="bid" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
-        <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar">여론조사 톺아보기</span><span class="bar"><a href="exit.html">출구조사</a></span>
+        <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar"><a href="yeoronjosa.html">여론조사 톺아보기</a></span><span class="bar"><a href="exit.html">출구조사</a></span>
     </div>
-    <table id="canpic" style="position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);border:solid;padding: 100px;border-width: 0.5px;border-radius: 10px;">
-        <tr>
-            <td>
-            </td>
-            <td>
-                <span class="candi">
-                    <div id="candi1">ㅁ</div>
-                    <span>장원영</span>
-                </span>
-            </td>
-            <td>
-                <span style="padding-left: 50px;"></span>
-            </td>
-            <td>
-                <span class="candif"></span>
-                <span class="candi">
-                    <div id="candi2">ㅁ</div>
-                    <span>카리나</span>
-                </span>
-            </td>
-        </tr>
-    </table>
-    <div style="position: fixed;right: 3%;top: 20%;">
-        <h3 class="sbtn">선거 <span id="dday">D-5</span></h3>
-        <h3 class="sbtn">2차여론조사진행중</h3>
-        <h3 class="sbtn">선거광고보기</h3>
-        <div class="sbtn">
-            <h3>지난 여론조사</h3>
-            <br>
-            <span>장원영</span>
-            <span>카리나</span>
-            <br>
-        </div>
+    <div id="canpic" style="position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);border:solid;padding: 100px;border-width: 0.5px;border-radius: 10px;">    
+        <canvas id="myChart" width="400px" height="200px"></canvas>
     </div>
+    <div style="position: fixed; right: 3%; top: 20%;">
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">선거 <span id="dday">D-5</span></span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">2차여론조사진행중</span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">선거광고보기</span>
+  </div>
+  <div class="sbtn">
+    <canvas id="myChartt" width="100" height="150"></canvas>
+  </div>
+</div>
 </body>
 </html>

@@ -1,4 +1,4 @@
-
+/*
 let pic = 0
 function lup(){
     setTimeout(() => {
@@ -12,4 +12,4 @@ function lup(){
       lup();
     }, 3000);   
 }
-lup();
+lup();*/
