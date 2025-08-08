@@ -9,7 +9,7 @@
 </head>
 <script src="app.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="yrjs.js"></script>
+<script src="exit.js"></script>
 <script src="y.js"></script>
 <script src="barr.js"></script>
 <script src="dday.js"></script>
@@ -28,17 +28,17 @@
     </style>
     <a href="Index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
-        <div>여론조사</div>
+        <div>선거 일정 로드맵</div>
         <br>
         <div><img src="dartit.png" width="150px" alt=""></div>
     </div></a>
     <div class="bid" id="barr" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
+
     </div>
-    <div id="canpic" style="position:absolute;left:50%;top:50%;transform: translate(-50%, -50%);border:solid;padding: 100px;border-width: 0.5px;border-radius: 10px;">    
-        <canvas id="myChart" width="400px" height="200px"></canvas>
+    <div id="canpic" style="position:absolute;left:45%;top:50%;transform: translate(-50%, -50%);padding: 100px;">    
+        <img src="POST-IT일정 계획 (2).jpg" width="130%" alt="">
     </div>
-    <div style="position: fixed;right: 3%;top: 20%;">
-        <div style="position: fixed; right: 3%; top: 20%;">
+    <div style="position: fixed; right: 3%; top: 20%;">
   <div style="margin-bottom: 30px;">
     <span class="sbtn" style="display: inline-block; width: 150px;">선거 <span id="dday" style="font-weight: bolder;">D-5</span></span>
   </div>
@@ -46,14 +46,11 @@
     <span class="sbtn" style="display: inline-block; width: 150px;">2차여론조사진행중</span>
   </div>
   <div style="margin-bottom: 30px;">
-    <span class="sbtn" style="display: inline-block; width: 150px;" onclick="document.getElementById('vid').style.display = 'block';"><a href="video.html">선거광고보기</a></span>
+    <span class="sbtn" style="display: inline-block; width: 150px;"><a href="video.html">선거광고보기</a></span>
   </div>
   <div class="sbtn" style="display: none;">
     <canvas id="myChartt" width="100" height="150"></canvas>
   </div>
-
-<div style="position: fixed;left:50%;top:50%;transform: translate(-50%, -50%);background-color: white;padding: 15%;"><h1>8/20(수) 실시예정</h1></div>
 </div>
-    </div>
 </body>
 </html>

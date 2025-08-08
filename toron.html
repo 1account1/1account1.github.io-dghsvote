@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
 </head>
-<script type="module" src="app.js"></script>
-<script></script>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="y.js"></script>
+<script src="dday.js"></script>
+<script src="barr.js"></script>
 <body>
-    <div id="tit" style="text-align: center;position: fixed;top: 0;">
+    <a href="Index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
-        <div>후보자 토론</div>
+        <div>후보자 인터뷰</div>
         <br>
         <div><img src="dartit.png" width="150px" alt=""></div>
-    </div>
-    <div class="bid" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
-        <span class="bar"><a href="gongyak.html">후보자 공약</a></span><span class="bar">후보자 인터뷰</span><span class="barh">후보자 토론</span><span class="bar">여론조사 톺아보기</span><span class="bar">출구조사</span>
+    </div></a>
+    <div class="bid" id="barr" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
+        
     </div>
     <table style="margin-top: 8%;">
         <tr>
@@ -26,21 +29,23 @@
             <td style="padding-left: 100px;">
 
             </td>
-            <td></td>
-            <td style="padding-left: 5%;">
             </td>
         </tr>
-    </table>
-    <div style="position: fixed;right: 3%;top: 20%;">
-        <h3 class="sbtn">선거 <span id="dday">D-5</span></h3>
-        <h3 class="sbtn">2차여론조사진행중</h3>
-        <h3 class="sbtn">선거광고보기</h3>
-        <div class="sbtn">
-            <h3>지난 여론조사</h3>
-            <br>
-            <span>김춘오</span>
-            <br>
-        </div>
-    </div>
+    </table><div style="position: fixed; right: 3%; top: 20%;">
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">선거 <span id="dday" style="font-weight: bolder;">D-5</span></span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;">2차여론조사진행중</span>
+  </div>
+  <div style="margin-bottom: 30px;">
+    <span class="sbtn" style="display: inline-block; width: 150px;"><a href="video.html">선거광고보기</a></span>
+  </div>
+  <div class="sbtn" style="display: none;">
+    <canvas id="myChartt" width="100" height="150"></canvas>
+  </div>
+</div>
+
+<div style="position: fixed;left:50%;top:50%;transform: translate(-50%, -50%);background-color: white;padding: 15%;"><h1>8/22(금) 공개예정</h1></div>
 </body>
 </html>
