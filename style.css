@@ -10,6 +10,22 @@
     margin: 0px;
     vertical-align: top;
 }
+@media (max-width: 1000px) {
+    #mainbody{
+        display: none;
+    }
+    #subbody{
+        display: block;
+    }
+}
+@media (min-width: 1000px) {
+    #mainbody{
+        display: block;
+    }
+    #subbody{
+        display: none;
+    }
+}
 .bar:hover{
     background-color: rgb(35, 35, 79);
     color: white;
