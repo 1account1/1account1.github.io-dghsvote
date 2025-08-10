@@ -10,6 +10,14 @@
     margin: 0px;
     vertical-align: top;
 }
+.bar:hover{
+    background-color: rgb(35, 35, 79);
+    color: white;
+}
+#canpic{
+    background-color: white;
+    font-weight: bold;
+}
 #myChart {
   width: 300px;
   height: 200px;
@@ -21,16 +29,19 @@
 * {
   font-family: 'MyCustomFont', sans-serif;
 }
+body{
+    background-color: whitesmoke;
+    font-weight: bold;
+}
 
 .bid{
     border: solid;
-    border-width: 1px;
-    border-right-width: 0;
-    border-left-width: 1px;
+    border-width: 0px;
+    border-right-width: 0px;
+    border-left-width: 0px;
     border-top-width: 0;
-    border-bottom-width: 5px;
+    border-bottom-width: 7px;
     border-color: rgb(35, 35, 79);
-    border-bottom-left-radius: 5px;
     background-color: white;
 }
 .barh{
@@ -45,6 +56,7 @@
     vertical-align: top;
     font-size: 20px;
     font-weight: bold;
+    background-color: white;
 }
 td{
     padding: 0px;
@@ -64,6 +76,7 @@ table{
     border-width: 1px;
     border-bottom-width: 5px;
     border-radius: 5px;
+    background-color: white;
 }
 #dday{
     color: red;
@@ -88,6 +101,7 @@ table{
     border-width: 3px;
     border-top-width: 0;
     border-bottom-width: 8px;
+    background-color: white;
 }
 .gy{
     padding: 20px;
