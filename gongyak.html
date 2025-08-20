@@ -1,69 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>논산대건고총회장선거</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>논산대건고총회장선거</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="y.js"></script>
+  <script src="dday.js"></script>
+  <script src="barr.js"></script>
+  <script src="sideshowbar.js"></script>
 </head>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="y.js"></script>
-<script src="dday.js"></script>
-<script src="barr.js"></script>
-<script src="sideshowbar.js"></script>
-<script></script>
 <body>
-    <style>
-        #aa{
-            background-color: rgb(35, 35, 79);
-            color: white;
-        }
-    </style>
-    <a href="index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
-        <h2>2025</h2>
-        <div>후보자 공약</div>
-        <br>
-        <div><img src="dartit.png" width="150px" alt=""></div>
-    </div></a>
-    <div class="bid" id="barr" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
-    </div>
-    <table style="margin-top: 8%;">
-        <tr>
-            <td>
-            </td>
-            <td style="padding-left: 100px;">
+  <style>
+    #aa {
+      background-color: rgb(35, 35, 79);
+      color: white;
+    }
+  </style>
 
-            </td>
-            <table style="padding-left: 25%;padding-top:3%;">
-                <tr id="gys">
-                    <table style="position: absolute;top: 70%;left: 50%;transform: translate(-50%, -50%);">
-                        <tr>
-                            <td>
-                                <h3>
-                                    <span onClick="document.getElementById('im1').style.display = 'block';document.getElementById('im2').style.display = 'none';document.getElementById('im3').style.display = 'none';"style="background-color: rgb(211, 57, 57);padding: 10px;line-height: 1;color: white;">기호 1번 김민석</span>
-                                    <span onClick="document.getElementById('im2').style.display = 'block';document.getElementById('im1').style.display = 'none';document.getElementById('im3').style.display = 'none';" style="background-color: rgb(37, 39, 158);padding: 10px;line-height: 1;color: white;">기호 2번 김태준</span>
-                                    <span onClick="document.getElementById('im3').style.display = 'block';document.getElementById('im2').style.display = 'none';document.getElementById('im1').style.display = 'none';" style="background-color: rgb(211, 103, 57);padding: 10px;line-height: 1;color: white;">기호 3번 신명철</span>
-                                </h3>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="border-top: solid;border-color: rgb(35, 35, 79);border-width: 8px;">
-                                <span style="text-align: center;"><img id="im1" style="display: block;" width="300px" src="https://cdn.discordapp.com/attachments/1130084412831322193/1407496566482272317/1000043092.webp?ex=68a650d3&is=68a4ff53&hm=88dd722171e50aa90c9bbc9d2aa01f100fcecc3dcb55b029a60f3c20d9ff8bde&"></span>
-                                <span style="text-align: center;"><img id="im2" style="display: none;" width="300px" src="https://cdn.discordapp.com/attachments/1130084412831322193/1407496567178662049/1000043091.webp?ex=68a650d3&is=68a4ff53&hm=e5a4249b5d5d5ef9d67bb19fb8edc39dc61427af486f5a0ae61ce8cc2d386ed1&"></span>
-                                <span style="text-align: center;"><img id="im3" style="display: none;" width="300px" src="https://cdn.discordapp.com/attachments/1130084412831322193/1407496567589568603/1000043090.jpg?ex=68a650d3&is=68a4ff53&hm=58ec1a0eda1c3ff9b94b3068bf4cdf5784bba744fcd0867716c4907b3db3577f&"></span>  
-                            </td>
-                        </tr>
-                    </table>
-                </tr>
-            </table>
-            </td>
-        </tr>
-    </table><div style="position: fixed; right: 3%; top: 20%;">
-
-    <div style="margin-bottom: 30px;" id="sideshowbar">
+  <a href="index.html">
+    <div id="tit" style="text-align: center;position: fixed;top: 0;">
+      <h2>2025</h2>
+      <div>후보자 공약</div>
+      <br>
+      <div><img src="dartit.png" width="150px" alt=""></div>
     </div>
-</div>
-<span style="display: none;position: fixed;left:50%;top:50%;transform: translate(-50%, -50%);background-color: transparent;"><h1>8/20(수) 공개 예정</h1></span>
-</body>
-</html>
+  </a>
+
+  <div class="bid" id="barr" style="position: fixed; right: 0;top: 0;padding-right: 20%;"></div>
+
+  <div style="position: absolute;top: 70%;left: 50%;transform: translate(-50%, -50%); text-align:center;">
+    <h3>
+      <span onclick="showImg(1)" style="background-color: rgb(211, 57, 57);padding: 10px;color: white;">기호 1번 김민석</span>
+      <span onclick="showImg(2)" style="background-color: rgb(37, 39, 158);padding: 10px;color: white;">기호 2번 김태준</span>
+      <span onclick="showImg(3)" style="background-color: rgb(211, 103, 57);padding: 10px;color: white;">기호 3번 신명철</span>
+    </h3>
+
+    <div style="border-top: solid 8px rgb(35, 35, 79); margin-top:10px;">
+      <img id="im1" style="display:block;" width="300px" src="https://cdn.discordapp.com/attachments/1130084412831322193/1407496566482272317/1000043092.webp">
+      <img id="im2" style="display:none;" width="300px" src="https://cdn.discordapp.com/attachments/113008441283
