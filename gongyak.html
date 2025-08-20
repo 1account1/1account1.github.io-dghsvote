@@ -39,5 +39,27 @@
     </h3>
 
     <div style="border-top: solid 8px rgb(35, 35, 79); margin-top:10px;">
-      <img id="im1" style="display:block;" width="300px" src="https://cdn.discordapp.com/attachments/1130084412831322193/1407496566482272317/1000043092.webp">
-      <img id="im2" style="display:none;" width="300px" src="https://cdn.discordapp.com/attachments/113008441283
+      <img id="im1" style="display:block;" width="300px" src="10000430922-1.webp">
+      <img id="im2" style="display:none;" width="300px" src="1000043091-1.webp">
+      <img id="im3" style="display:none;" width="300px" src="1000043090.jpg">
+    </div>
+  </div>
+
+  <div style="position: fixed; right: 3%; top: 20%;">
+    <div style="margin-bottom: 30px;" id="sideshowbar"></div>
+  </div>
+
+  <span style="display: none;position: fixed;left:50%;top:50%;transform: translate(-50%, -50%);background-color: transparent;">
+    <h1>8/20(수) 공개 예정</h1>
+  </span>
+
+  <script>
+    function showImg(num) {
+      document.getElementById('im1').style.display = 'none';
+      document.getElementById('im2').style.display = 'none';
+      document.getElementById('im3').style.display = 'none';
+      document.getElementById('im' + num).style.display = 'block';
+    }
+  </script>
+</body>
+</html>
