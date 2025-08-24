@@ -23,6 +23,14 @@
             color: white;
         }
     </style>
+    <script>
+        function ch(num){
+            document.getElementById('can1').style.fontWeight = "normal"
+            document.getElementById('can2').style.fontWeight = "normal"
+            document.getElementById('can3').style.fontWeight = "normal"
+            document.getElementById('can' + num).style.fontWeight = "bolder"
+        }
+    </script>
     <a href="index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
         <h2>2025</h2>
         <div>후보자 인터뷰</div>
@@ -54,14 +62,6 @@
     </table><div style="position: fixed; right: 3%; top: 20%;">
     <div style="margin-bottom: 30px;" id="sideshowbar">
     </div>
-    <script>
-        function ch(num){
-            document.getElementById('can1').style.fontWeight = "normal"
-            document.getElementById('can2').style.fontWeight = "normal"
-            document.getElementById('can3').style.fontWeight = "normal"
-            document.getElementById('can' + num).style.fontWeight = "bolder"
-        }
-    </script>
 </div>
 </body>
 </html>
