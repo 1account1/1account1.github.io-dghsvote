@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>논산대건고총회장선거</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="투표대건.ico" type="image/x-icon">
+</head>
+<script src="app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="y.js"></script>
+<script src="dday.js"></script>
+<script src="barr.js"></script>
+<script src="sideshowbar.js"></script>
+<script>
+    
+</script>
+<body>
+    <style>
+        #bb{
+            background-color: rgb(35, 35, 79);
+            color: white;
+        }
+    </style>
+    <script>
+        function ch(num){
+            document.getElementById('can1').style.fontWeight = "normal"
+            document.getElementById('can2').style.fontWeight = "normal"
+            document.getElementById('can3').style.fontWeight = "normal"
+            document.getElementById('can' + num).style.fontWeight = "bolder"
+        }
+    </script>
+    <a href="index.html"><div id="tit" style="text-align: center;position: fixed;top: 0;">
+        <h2>2025</h2>
+        <div>선거 후 소감문</div>
+        <br>
+        <div><img src="dartit.png" width="150px" alt=""></div>
+    </div></a>
+    <div class="bid" id="barr" colspan="2" style="position: fixed; right: 0;top: 0;padding-right: 20%;">
+        
+    </div>
+    <table style="margin-top: 8%;">
+        <tr>
+            <td>
+            </td>
+            <td style="padding-left: 100px;">
+
+            </td>
+            </td>
+        </tr>
+        <div style="z-index: 5;position: absolute;top: 60%;left: 50%;transform: translate(-50%, -50%);">
+            <div style="display: flex;justify-content: center;">
+                <span id="can1" onclick="ch(1);document.getElementById('intv').innerHTML = '추후공개';" style="font-weight:bolder;background-color: rgb(35, 35, 79);padding: 10px;color: white;">김민석 송현서 유진환</span>
+                <span id="can2" onclick="ch(2);document.getElementById('intv').innerHTML = '추후공개';" style="font-weight:normal;background-color: rgb(35, 35, 79);padding: 10px;color: white;">김태준 이승엽 정우찬</span>
+                <span id="can3" onclick="ch(3);document.getElementById('intv').innerHTML = '추후공개';" style="font-weight:normal;background-color: rgb(35, 35, 79);padding: 10px;color: white;">신명철 이성배 손하민</span>
+             </div>
+            <div id="intv" style="margin-top: 30px;background-color: white;width: 550px;height: 300px;padding: 30px;overflow: auto;">
+                추후공개
+            </div>
+        </div>
+    </table><div style="position: fixed; right: 3%; top: 20%;">
+    <div style="margin-bottom: 30px;" id="sideshowbar">
+    </div>
+</div>
+</body>
+</html>
